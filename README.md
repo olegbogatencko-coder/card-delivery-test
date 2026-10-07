@@ -1,3 +1,4 @@
+[![Java CI with Gradle](https://github.com/olegbogatencko-coder/card-delivery-test/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/olegbogatencko-coder/card-delivery-test/actions/workflows/gradle.yml)
 # Card Delivery — автотесты (Selenide)
 
 Автотесты формы заказа доставки карты.
