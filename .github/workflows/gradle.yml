@@ -21,15 +21,5 @@ jobs:
       - name: Start SUT
         run: java -jar ./artifacts/app-card-delivery.jar &
 
-      - name: Wait for SUT to start
-        run: sleep 15
-
       - name: Run tests with Gradle
         run: ./gradlew test --info -Dselenide.headless=true
-
-      - name: Upload Test Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-report
-          path: build/reports/tests/test/
